@@ -1,1 +1,12 @@
-<p>card works!</p>
+<div id="card">
+    <div id="imageContainer">
+        <img src="https://picsum.photos/700/800" id="image" alt="Place image title">
+    </div>
+    <div id="newsInfoContainer">
+        <h1 id="title">Title</h1>
+        <p id="text">
+            {{ (body.length>200)? (body | slice:0:200)+'...':(body) }}
+        </p>
+    </div>
+</div>
+
