@@ -1,11 +1,11 @@
 <div id="card">
     <div id="imageContainer">
-        <img src="https://picsum.photos/700/800" id="image" alt="Place image title">
+        <img src={{news.imageUrl}} id="image" alt="Place image title">
     </div>
     <div id="newsInfoContainer">
-        <h1 id="title">Title</h1>
+        <h1 id="title">{{news.title}}</h1>
         <p id="text">
-            {{ (body.length>200)? (body | slice:0:200)+'...':(body) }}
+            {{ (news.body.length>200)? (news.body | slice:0:200)+'...':(news.body) }}
         </p>
     </div>
 </div>
