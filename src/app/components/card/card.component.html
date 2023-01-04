@@ -3,7 +3,10 @@
         <img src={{news.imageUrl}} id="image" alt="Place image title">
     </div>
     <div id="newsInfoContainer">
-        <h1 id="title">{{news.title}}</h1>
+        <h2 id="title">
+            <!-- {{news.title}} -->
+            {{ (news.title.length>20)? (news.title | slice:0:20)+'...':(news.title) }}
+        </h2>
         <p id="text">
             {{ (news.body.length>200)? (news.body | slice:0:200)+'...':(news.body) }}
         </p>

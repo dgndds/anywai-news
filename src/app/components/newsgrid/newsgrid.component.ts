@@ -23,7 +23,7 @@ export class NewsgridComponent implements OnInit {
 
     this.searchService.searchEmmiter.subscribe((data:string) => { 
       this.searchValue = data;
-      this.shownNews = this.newsArr.filter(news=> news.body.includes(data));
+      this.shownNews = this.newsArr.filter(news=> news.body.toLowerCase().includes(data.toLowerCase()));
     });
   }
 
