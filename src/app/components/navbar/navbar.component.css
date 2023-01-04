@@ -5,7 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 150px;
+    position: fixed;
+    top: 0;
 }
 
 #searchBox {
