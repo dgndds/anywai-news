@@ -4,7 +4,6 @@
     </div>
     <div id="newsInfoContainer">
         <h2 id="title">
-            <!-- {{news.title}} -->
             {{ (news.title.length>20)? (news.title | slice:0:20)+'...':(news.title) }}
         </h2>
         <p id="text">

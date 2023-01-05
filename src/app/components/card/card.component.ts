@@ -7,7 +7,7 @@ import { News } from '../../interfaces/News';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() news: News = {id:"",title:"",imageUrl:"",body:""};
+  @Input() news: News = {id:"", title:"", imageUrl:"", body:""};
 
   constructor() { }
 
