@@ -12,6 +12,7 @@
 #searchBox {
     height: 20px;
     flex: 1;
+    outline: none;
 }
 
 #form {
@@ -21,6 +22,12 @@
     align-items: center;
 }
 
-#searchButton {
+.button {
     height: 22px;
+    background-color: #4285F4;
+    color: #fff;
+}
+
+#resetButton {
+    margin-left: 10px;
 }

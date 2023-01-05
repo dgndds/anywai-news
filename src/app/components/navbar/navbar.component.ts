@@ -15,7 +15,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSearch():void{
+  onSearch(): void {
+    this.searchService.initiateSearch(this.searchInput);
+  }
+
+  onReset(): void {
+    this.searchInput = "";
     this.searchService.initiateSearch(this.searchInput);
   }
 
